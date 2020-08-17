@@ -22,6 +22,19 @@
     <link rel="stylesheet" href="{% static 'home/css/owl.carousel.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'home/css/slicknav.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'home/css/mystyle.css' %}" type="text/css">
+
+
+    <!--MDB css-->
+    <!-- Font Awesome -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -73,13 +86,13 @@
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
                                     <li><a href="{% url 'product_details' %}">Product Details</a></li>
-                                    <li><a href="./shop-cart.html">Shop Cart</a></li>
+                                    <li><a href="{% url 'cart_page' %}">Shop Cart</a></li>
                                     <li><a href="./checkout.html">Checkout</a></li>
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
                             <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="{% url 'contact_page' %}">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -94,7 +107,7 @@
                             <li><a href="#"><span class="icon_heart_alt"></span>
                                 <div class="tip">2</div>
                             </a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span>
+                            <li><a href="{% url 'cart_page' %}"><span class="icon_bag_alt"></span>
                                 <div class="tip">2</div>
                             </a></li>
                         </ul>
