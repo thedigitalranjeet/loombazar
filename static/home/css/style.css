@@ -2000,12 +2000,12 @@ ol {
 	border-bottom: none;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
-	justify-content: center;
+	/* justify-content: center; */
 	position: relative;
 	margin-bottom: 40px;
 }
 
-.nav::before {
+/* .nav::before {
 	position: absolute;
 	left: 0;
 	top: 13px;
@@ -2013,9 +2013,9 @@ ol {
 	width: 335px;
 	background: #e1e1e1;
 	content: "";
-}
+} */
 
-.nav::after {
+/* .nav::after {
 	position: absolute;
 	right: 0;
 	top: 13px;
@@ -2023,7 +2023,7 @@ ol {
 	width: 335px;
 	background: #e1e1e1;
 	content: "";
-}
+} */
 
 .nav-item {
 	margin-right: 46px;
